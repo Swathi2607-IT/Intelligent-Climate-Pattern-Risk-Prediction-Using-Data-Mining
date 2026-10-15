@@ -366,5 +366,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 **Built with ❤️ for climate science education and awareness**
 
-*Last Updated: November 15, 2025*
 #
