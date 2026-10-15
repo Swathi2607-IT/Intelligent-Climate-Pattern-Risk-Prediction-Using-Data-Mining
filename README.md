@@ -1,4 +1,4 @@
-# Climate Change Data Analysis Platform
+# Intelligent-Climate-Pattern-Risk-Prediction-Using-Data-Mining
 
 > **A comprehensive end-to-end analytics system for analyzing long-term climate change indicators**
 
@@ -367,5 +367,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 **Built with ❤️ for climate science education and awareness**
 
 *Last Updated: November 15, 2025*
-#   I n t e l l i g e n t - C l i m a t e - P a t t e r n - R i s k - P r e d i c t i o n - U s i n g - D a t a - M i n i n g  
- 
+#
