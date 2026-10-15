@@ -1,0 +1,201 @@
+You are assisting in building a full-scale Climate Change Data Analysis platform.
+Your tasks include data engineering, machine learning, visualization, and website development.
+Follow all requirements below and generate production-quality code, structure, and documentation.
+
+📌 PROJECT DESCRIPTION
+
+Build an end-to-end analytics system that analyzes long-term climate change indicators such as:
+
+Global temperature anomalies
+
+CO₂ atmospheric concentrations
+
+Methane (CH₄) levels
+
+Global sea level rise
+
+The system should identify trends, correlations, anomalies, and perform predictive analysis for future climate conditions.
+
+📌 CORE REQUIREMENTS
+
+Copilot should generate:
+
+🔹 1. Project Structure (Full Repository)
+
+Create a complete project layout:
+
+/data/raw
+/data/processed
+/data/sample (100-row dataset)
+/pipeline/ingestion
+/pipeline/transformation
+/pipeline/ml
+/notebooks
+/visualizations
+/dashboard
+/website
+/docs
+
+🔹 2. Data Engineering Pipeline
+
+Build reusable pipeline scripts for:
+
+Ingestion
+
+Pull NASA GISS, NOAA temperature datasets
+
+Pull NOAA greenhouse gas CO₂ & CH₄ datasets
+
+Pull NOAA/NASA sea level datasets
+
+Simulate ingestion using Kafka & Airflow DAGs
+
+Store data in HDFS or AWS S3 bucket format
+
+Transformation
+
+Data cleaning with Pandas
+
+Schema standardization
+
+Feature engineering
+
+Time-series alignment
+
+Merge datasets by year or month
+
+Outlier detection
+
+Output
+
+Store cleaned datasets in /data/processed
+
+🔹 3. Machine Learning
+
+Generate Python scripts & notebooks for:
+
+Trend estimation (linear regression, moving avg)
+
+Time-series forecasting (ARIMA / Prophet)
+
+Multivariate correlation analysis
+
+CO₂ vs temperature correlation models
+
+Sea-level prediction models
+
+Save models under /pipeline/ml/models.
+
+🔹 4. Visualizations
+
+Generate code for:
+
+Line charts of temperature anomalies
+
+CO₂ growth over decades
+
+Sea-level rise graphs
+
+Methane rise
+
+Heatmap correlation matrix
+
+Use Matplotlib / Plotly (no seaborn unless necessary).
+
+🔹 5. Sample Dataset (100 Rows)
+
+Generate a synthetic dataset with:
+
+year, global_temp_anomaly, co2_ppm, methane_ppb, sea_level_mm
+
+
+Store as /data/sample/climate_sample.csv.
+
+🔹 6. Dashboard
+
+Create dashboards using:
+
+Tableau or Power BI
+
+Provide exported .twbx or .pbix instructions
+
+Provide SQL/data model used for the dashboard
+
+Also generate:
+
+Summary KPIs
+
+Trend cards
+
+Maps (if possible)
+
+🔹 7. Modern Website UI
+
+Create a complete gradient-based website (HTML/CSS + optional JS):
+
+Sections:
+
+Landing page
+
+Datasets
+
+Pipeline architecture
+
+Visualizations gallery
+
+ML predictions
+
+Download dataset
+
+Contact/info
+
+Design requirements:
+
+Gradient backgrounds
+
+Glassmorphism cards
+
+Smooth fade/slide animations
+
+High-contrast typography
+
+Responsive mobile-first layout
+
+🔹 8. Documentation
+
+Generate:
+
+README.md (comprehensive)
+
+Architecture diagram (Mermaid + PNG version)
+
+System workflow explanation
+
+APIs and dependencies
+
+Setup instructions
+
+Using the pipeline
+
+Using dashboards
+
+📌 SPECIAL INSTRUCTIONS
+
+Write clean, modular, production-ready code
+
+Add comments, docstrings, and typing hints
+
+Use best ML/data engineering practices
+
+When generating code, create full files, not fragments
+
+When generating DAGs, include full imports
+
+When generating HTML/CSS, include full pages
+
+Use realistic sample values in the synthetic dataset
+
+📌 FINAL ACTION
+
+Start by generating the full repo structure and placeholder files.
+Then proceed step-by-step through ingestion → transformation → ML → visualizations → website → documentation.

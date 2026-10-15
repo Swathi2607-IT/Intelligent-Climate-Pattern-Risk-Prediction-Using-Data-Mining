@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Data Analysis Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <span class="logo-icon">🌍</span>
+                <span class="logo-text">Climate Analytics</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#datasets" class="nav-link">Datasets</a></li>
+                <li><a href="#pipeline" class="nav-link">Pipeline</a></li>
+                <li><a href="#visualizations" class="nav-link">Visualizations</a></li>
+                <li><a href="#predictions" class="nav-link">Predictions</a></li>
+                <li><a href="#download" class="nav-link">Download</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-fade-in">
+                    Understanding Our 
+                    <span class="gradient-text">Changing Climate</span>
+                </h1>
+                <p class="hero-subtitle animate-fade-in-delay-1">
+                    Comprehensive data analysis platform tracking temperature anomalies, 
+                    CO₂ levels, methane concentrations, and sea level rise since 1924
+                </p>
+                <div class="hero-buttons animate-fade-in-delay-2">
+                    <a href="#visualizations" class="btn btn-primary">Explore Data</a>
+                    <a href="#download" class="btn btn-secondary">Download Dataset</a>
+                </div>
+            </div>
+            
+            <!-- KPI Cards -->
+            <div class="kpi-grid animate-fade-in-delay-3">
+                <div class="glass-card kpi-card">
+                    <div class="kpi-icon" style="background: linear-gradient(135deg, #FF6B6B, #FF8E53);">🌡️</div>
+                    <div class="kpi-value">+1.02°C</div>
+                    <div class="kpi-label">Temperature Rise</div>
+                    <div class="kpi-trend up">↑ 0.009°C/year</div>
+                </div>
+                
+                <div class="glass-card kpi-card">
+                    <div class="kpi-icon" style="background: linear-gradient(135deg, #4FACFE, #00F2FE);">🏭</div>
+                    <div class="kpi-value">422.5 ppm</div>
+                    <div class="kpi-label">CO₂ Concentration</div>
+                    <div class="kpi-trend up">↑ 1.18 ppm/year</div>
+                </div>
+                
+                <div class="glass-card kpi-card">
+                    <div class="kpi-icon" style="background: linear-gradient(135deg, #FA709A, #FEE140);">💨</div>
+                    <div class="kpi-value">1,582 ppb</div>
+                    <div class="kpi-label">Methane Level</div>
+                    <div class="kpi-trend up">↑ 4.4 ppb/year</div>
+                </div>
+                
+                <div class="glass-card kpi-card">
+                    <div class="kpi-icon" style="background: linear-gradient(135deg, #30CFD0, #330867);">🌊</div>
+                    <div class="kpi-value">357 mm</div>
+                    <div class="kpi-label">Sea Level Rise</div>
+                    <div class="kpi-trend up">↑ 3.6 mm/year</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Datasets Section -->
+    <section id="datasets" class="section">
+        <div class="container">
+            <h2 class="section-title">Data Sources</h2>
+            <p class="section-subtitle">Our analysis combines data from leading climate research organizations</p>
+            
+            <div class="datasets-grid">
+                <div class="glass-card dataset-card">
+                    <div class="dataset-header">
+                        <div class="dataset-icon">📊</div>
+                        <h3>NASA GISS</h3>
+                    </div>
+                    <p>Global temperature anomaly data from NASA's Goddard Institute for Space Studies</p>
+                    <ul class="dataset-features">
+                        <li>✓ Historical records since 1880</li>
+                        <li>✓ Monthly and annual averages</li>
+                        <li>✓ Global, hemispheric data</li>
+                    </ul>
+                    <a href="#" class="dataset-link">View Source →</a>
+                </div>
+                
+                <div class="glass-card dataset-card">
+                    <div class="dataset-header">
+                        <div class="dataset-icon">🔬</div>
+                        <h3>NOAA CO₂</h3>
+                    </div>
+                    <p>Atmospheric CO₂ measurements from NOAA's Mauna Loa Observatory</p>
+                    <ul class="dataset-features">
+                        <li>✓ Continuous monitoring</li>
+                        <li>✓ Parts per million (ppm)</li>
+                        <li>✓ High-precision data</li>
+                    </ul>
+                    <a href="#" class="dataset-link">View Source →</a>
+                </div>
+                
+                <div class="glass-card dataset-card">
+                    <div class="dataset-header">
+                        <div class="dataset-icon">🧪</div>
+                        <h3>NOAA Methane</h3>
+                    </div>
+                    <p>Global methane concentration tracking from NOAA's greenhouse gas network</p>
+                    <ul class="dataset-features">
+                        <li>✓ Global coverage</li>
+                        <li>✓ Parts per billion (ppb)</li>
+                        <li>✓ Trend analysis</li>
+                    </ul>
+                    <a href="#" class="dataset-link">View Source →</a>
+                </div>
+                
+                <div class="glass-card dataset-card">
+                    <div class="dataset-header">
+                        <div class="dataset-icon">🌊</div>
+                        <h3>Sea Level Data</h3>
+                    </div>
+                    <p>Global mean sea level measurements from satellite altimetry and tide gauges</p>
+                    <ul class="dataset-features">
+                        <li>✓ Satellite observations</li>
+                        <li>✓ Millimeter precision</li>
+                        <li>✓ Validated records</li>
+                    </ul>
+                    <a href="#" class="dataset-link">View Source →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pipeline Section -->
+    <section id="pipeline" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Data Pipeline Architecture</h2>
+            <p class="section-subtitle">End-to-end ETL pipeline with machine learning integration</p>
+            
+            <div class="pipeline-flow">
+                <div class="pipeline-stage glass-card">
+                    <div class="stage-number">1</div>
+                    <h3>Data Ingestion</h3>
+                    <p>Automated data collection from NASA GISS, NOAA, and other sources</p>
+                    <div class="tech-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Kafka</span>
+                        <span class="tag">Airflow</span>
+                    </div>
+                </div>
+                
+                <div class="pipeline-arrow">→</div>
+                
+                <div class="pipeline-stage glass-card">
+                    <div class="stage-number">2</div>
+                    <h3>Data Transformation</h3>
+                    <p>Cleaning, standardization, feature engineering, and time-series alignment</p>
+                    <div class="tech-tags">
+                        <span class="tag">Pandas</span>
+                        <span class="tag">NumPy</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                </div>
+                
+                <div class="pipeline-arrow">→</div>
+                
+                <div class="pipeline-stage glass-card">
+                    <div class="stage-number">3</div>
+                    <h3>Machine Learning</h3>
+                    <p>Trend analysis, forecasting, and correlation modeling</p>
+                    <div class="tech-tags">
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">ARIMA</span>
+                        <span class="tag">Prophet</span>
+                    </div>
+                </div>
+                
+                <div class="pipeline-arrow">→</div>
+                
+                <div class="pipeline-stage glass-card">
+                    <div class="stage-number">4</div>
+                    <h3>Visualization</h3>
+                    <p>Interactive dashboards and publication-quality charts</p>
+                    <div class="tech-tags">
+                        <span class="tag">Plotly</span>
+                        <span class="tag">Matplotlib</span>
+                        <span class="tag">Tableau</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visualizations Section -->
+    <section id="visualizations" class="section">
+        <div class="container">
+            <h2 class="section-title">Data Visualizations</h2>
+            <p class="section-subtitle">Interactive charts revealing climate change trends</p>
+            
+            <div class="viz-gallery">
+                <div class="glass-card viz-card">
+                    <div class="viz-preview" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <div class="viz-icon">📈</div>
+                    </div>
+                    <h3>Temperature Trends</h3>
+                    <p>100 years of global temperature anomaly data with trend analysis</p>
+                    <a href="../visualizations/output/temperature_anomaly.html" class="btn btn-small">View Chart</a>
+                </div>
+                
+                <div class="glass-card viz-card">
+                    <div class="viz-preview" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <div class="viz-icon">🏭</div>
+                    </div>
+                    <h3>CO₂ Growth</h3>
+                    <p>Atmospheric carbon dioxide concentration over the decades</p>
+                    <a href="../visualizations/output/co2_concentration.html" class="btn btn-small">View Chart</a>
+                </div>
+                
+                <div class="glass-card viz-card">
+                    <div class="viz-preview" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <div class="viz-icon">🌊</div>
+                    </div>
+                    <h3>Sea Level Rise</h3>
+                    <p>Global mean sea level changes measured in millimeters</p>
+                    <a href="../visualizations/output/sea_level_rise.html" class="btn btn-small">View Chart</a>
+                </div>
+                
+                <div class="glass-card viz-card">
+                    <div class="viz-preview" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <div class="viz-icon">💨</div>
+                    </div>
+                    <h3>Methane Levels</h3>
+                    <p>Atmospheric methane concentration tracking</p>
+                    <a href="../visualizations/output/methane_levels.html" class="btn btn-small">View Chart</a>
+                </div>
+                
+                <div class="glass-card viz-card">
+                    <div class="viz-preview" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <div class="viz-icon">🔗</div>
+                    </div>
+                    <h3>Correlation Matrix</h3>
+                    <p>Statistical relationships between climate indicators</p>
+                    <a href="../visualizations/output/correlation_heatmap.html" class="btn btn-small">View Chart</a>
+                </div>
+                
+                <div class="glass-card viz-card">
+                    <div class="viz-preview" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                        <div class="viz-icon">📊</div>
+                    </div>
+                    <h3>Full Dashboard</h3>
+                    <p>Comprehensive view of all climate indicators</p>
+                    <a href="../visualizations/output/climate_dashboard.html" class="btn btn-small">View Chart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Predictions Section -->
+    <section id="predictions" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">ML Predictions & Forecasts</h2>
+            <p class="section-subtitle">Data-driven projections for the next 30 years</p>
+            
+            <div class="predictions-grid">
+                <div class="glass-card prediction-card">
+                    <h3>🌡️ Temperature Forecast</h3>
+                    <div class="prediction-value">+1.45°C</div>
+                    <div class="prediction-label">Projected by 2053</div>
+                    <div class="prediction-confidence">95% Confidence Interval</div>
+                    <div class="prediction-details">
+                        <p>Based on linear regression and ARIMA time-series models</p>
+                        <ul>
+                            <li>R² Score: 0.96</li>
+                            <li>RMSE: 0.08°C</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="glass-card prediction-card">
+                    <h3>🏭 CO₂ Projection</h3>
+                    <div class="prediction-value">457.9 ppm</div>
+                    <div class="prediction-label">Projected by 2053</div>
+                    <div class="prediction-confidence">90% Confidence Interval</div>
+                    <div class="prediction-details">
+                        <p>Exponential growth model with seasonal decomposition</p>
+                        <ul>
+                            <li>R² Score: 0.99</li>
+                            <li>Annual growth: 1.18 ppm</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="glass-card prediction-card">
+                    <h3>🌊 Sea Level Forecast</h3>
+                    <div class="prediction-value">+465 mm</div>
+                    <div class="prediction-label">Total rise by 2053</div>
+                    <div class="prediction-confidence">85% Confidence Interval</div>
+                    <div class="prediction-details">
+                        <p>Multivariate regression considering temperature and ice melt</p>
+                        <ul>
+                            <li>Acceleration: 0.08 mm/yr²</li>
+                            <li>Current rate: 3.6 mm/year</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="model-info glass-card">
+                <h3>📊 Model Performance</h3>
+                <div class="model-metrics">
+                    <div class="metric">
+                        <div class="metric-label">Training Data</div>
+                        <div class="metric-value">100 years</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Features</div>
+                        <div class="metric-value">4 indicators</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Algorithms</div>
+                        <div class="metric-value">ARIMA, Prophet, Linear</div>
+                    </div>
+                    <div class="metric">
+                        <div class="metric-label">Validation</div>
+                        <div class="metric-value">Cross-validated</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="section">
+        <div class="container">
+            <h2 class="section-title">Download Resources</h2>
+            <p class="section-subtitle">Access datasets, notebooks, and documentation</p>
+            
+            <div class="download-grid">
+                <div class="glass-card download-card">
+                    <div class="download-icon">📁</div>
+                    <h3>Climate Sample Dataset</h3>
+                    <p>100 years of climate data (1924-2023)</p>
+                    <div class="download-info">
+                        <span>Format: CSV</span>
+                        <span>Size: ~15 KB</span>
+                    </div>
+                    <a href="../data/sample/climate_sample.csv" class="btn btn-primary" download>Download CSV</a>
+                </div>
+                
+                <div class="glass-card download-card">
+                    <div class="download-icon">📓</div>
+                    <h3>Jupyter Notebooks</h3>
+                    <p>Complete ML analysis and visualizations</p>
+                    <div class="download-info">
+                        <span>Format: IPYNB</span>
+                        <span>Includes: Analysis code</span>
+                    </div>
+                    <a href="../notebooks/climate_ml_analysis.ipynb" class="btn btn-primary" download>Download Notebook</a>
+                </div>
+                
+                <div class="glass-card download-card">
+                    <div class="download-icon">📊</div>
+                    <h3>Dashboard Templates</h3>
+                    <p>Tableau & Power BI configurations</p>
+                    <div class="download-info">
+                        <span>Format: Instructions</span>
+                        <span>Platforms: Tableau, Power BI</span>
+                    </div>
+                    <a href="../dashboard/" class="btn btn-primary">View Instructions</a>
+                </div>
+                
+                <div class="glass-card download-card">
+                    <div class="download-icon">📚</div>
+                    <h3>Documentation</h3>
+                    <p>Complete project documentation and API reference</p>
+                    <div class="download-info">
+                        <span>Format: Markdown</span>
+                        <span>Includes: Setup guide</span>
+                    </div>
+                    <a href="../docs/README.md" class="btn btn-primary">Read Docs</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Questions, feedback, or collaboration opportunities</p>
+            
+            <div class="contact-content">
+                <div class="glass-card contact-card">
+                    <h3>📧 Email</h3>
+                    <p>climate.analytics@example.com</p>
+                </div>
+                
+                <div class="glass-card contact-card">
+                    <h3>🐙 GitHub</h3>
+                    <p>github.com/climate-analysis</p>
+                </div>
+                
+                <div class="glass-card contact-card">
+                    <h3>📊 Data Sources</h3>
+                    <p>NASA GISS, NOAA, CSIRO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Climate Change Data Analysis Platform. Built for educational and research purposes.</p>
+            <p class="footer-links">
+                <a href="#home">Home</a> • 
+                <a href="#datasets">Datasets</a> • 
+                <a href="#visualizations">Visualizations</a> • 
+                <a href="#download">Download</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
